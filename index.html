@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chevaux & CSO</title>
+    <title>Chevaux en CSO - Obstacles Droit Ouvert</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
+            background: #f2f2f2;
             color: #333;
         }
         header {
-            background: #3a6ea5;
+            background: #2f5aa8;
             color: white;
             text-align: center;
             padding: 50px 20px;
@@ -22,25 +22,32 @@
             font-size: 3rem;
         }
         section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 20px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
-        img {
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .gallery img {
             width: 100%;
             border-radius: 10px;
-            margin: 20px 0;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s;
         }
-        ul {
-            line-height: 1.8;
+        .gallery img:hover {
+            transform: scale(1.05);
         }
         footer {
             text-align: center;
-            padding: 20px;
-            background: #ececec;
+            padding: 25px;
+            background: #e3e3e3;
             margin-top: 40px;
         }
     </style>
@@ -48,56 +55,26 @@
 <body>
 
 <header>
-    <h1>Chevaux & CSO</h1>
-    <p>Un site dédié aux passionnés de cheval et de saut d'obstacles.</p>
+    <h1>Chevaux en CSO</h1>
+    <p>Photos de chevaux sautant un obstacle de type droit ouvert</p>
 </header>
 
 <section>
-    <h2>Le Cheval : un partenaire incroyable</h2>
-    <p>
-        Le cheval est un animal noble, puissant et sensible. Depuis des milliers d’années, 
-        il accompagne les humains dans le sport, le travail et même la thérapie.  
-        En CSO, le cheval devient un véritable athlète : rapide, agile et très réactif.
-    </p>
+    <h2>Galerie : Obstacles Droit Ouvert</h2>
+    <p>Voici une sélection de photos de chevaux en plein saut sur des obstacles droits ouverts.</p>
 
-    <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf" alt="Cheval CSO">
-
-    <h2>Qu'est-ce que le CSO ?</h2>
-    <p>
-        Le <strong>Concours de Saut d’Obstacles (CSO)</strong> est une discipline équestre où le cavalier 
-        et son cheval doivent franchir un parcours composé d'obstacles : verticales, oxers, rivières, etc.  
-        Le but : <strong>ne pas faire tomber de barres</strong> et réaliser le meilleur temps.
-    </p>
-
-    <h3>Les règles principales :</h3>
-    <ul>
-        <li>Chaque barre tombée = 4 points de pénalité.</li>
-        <li>Un refus = 4 points ; deux refus = élimination.</li>
-        <li>Le temps limite doit être respecté.</li>
-        <li>Le parcours doit être réalisé dans le bon ordre.</li>
-    </ul>
-
-    <h2>Les qualités d’un bon cheval de CSO</h2>
-    <ul>
-        <li>Puissance pour sauter haut et loin.</li>
-        <li>Agilité et souplesse dans les virages.</li>
-        <li>Bon mental : courage, calme, concentration.</li>
-        <li>Respect : éviter de toucher les barres.</li>
-    </ul>
-
-    <h2>Les niveaux en CSO</h2>
-    <p>En France, les épreuves sont classées principalement par hauteur :</p>
-    <ul>
-        <li>Poneys : 50 cm à 1m10</li>
-        <li>Club : 60 cm à 1m10</li>
-        <li>Amateur : 1m à 1m35</li>
-        <li>Pro : 1m30 à 1m60</li>
-        <li>Grands Prix internationaux : 1m60</li>
-    </ul>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf" alt="Cheval sautant un droit ouvert">
+        <img src="https://images.unsplash.com/photo-1504629454141-1d57b719d301" alt="CSO obstacle droit ouvert">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783" alt="Cheval sautant un obstacle droit">
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" alt="Saut d'obstacle droit ouvert">
+        <img src="https://images.unsplash.com/photo-1525253086316-d0c936c814f8" alt="Cheval en concours de saut">
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a" alt="Cheval sautant en CSO">
+    </div>
 </section>
 
 <footer>
-    © 2025 — Site sur les chevaux et le CSO
+    © 2025 — Galerie de CSO : Obstacles Droit Ouvert
 </footer>
 
 </body>
